@@ -1,51 +1,39 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background: linear-gradient(to bottom, #f0f8ff, #e0f7fa); /* Gradient background */
+    color: #003300; /* Dark green text */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* Improved readability */
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
 }
 
 header {
-    background: #2c3e50;
-    color: white;
-    padding: 10px 0;
+    background-color: #4caf50; /* Darker green for header */
+    padding: 20px;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
+    color: white; /* White text for contrast */
 }
 
 main {
     padding: 20px;
+    text-align: center; /* Centered content */
+}
+
+a {
+    color: #32cd32; /* Bright green for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold links for emphasis */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
 }
 
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #2c3e50;
+    background-color: #4caf50; /* Footer matching the header */
     color: white;
+    text-align: center;
+    padding: 10px 0; /* Footer padding */
     position: relative;
     bottom: 0;
     width: 100%;
