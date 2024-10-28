@@ -47,6 +47,14 @@ header nav a:hover {
     padding: 100px 20px;
 }
 
+.banner-content {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .banner-content h1 {
     font-size: 2.5em;
     margin-bottom: 0.5em;
@@ -58,51 +66,35 @@ header nav a:hover {
 }
 
 .cta-button {
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: #ffcd00;
+    color: #333;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .cta-button:hover {
-    background-color: #388e3c;
+    background-color: #ffb700;
 }
 
 /* Content Sections */
 section {
     padding: 3em 2em;
-}
-
-.about-content, .contact-content {
-    text-align: center;
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact Form */
-.contact-content form input, .contact-content form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+section h2 {
+    margin-bottom: 20px;
+    color: #35424a;
+    font-size: 2em;
 }
 
-.contact-content form button {
-    background-color: #2e7d32;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.contact-content form button:hover {
-    background-color: #388e3c;
-}
-
-/* Footer */
 footer {
     background-color: #35424a;
     color: #fff;
