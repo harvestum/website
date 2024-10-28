@@ -6,19 +6,21 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     line-height: 1.6;
+    background: #f4f4f4;
 }
 
 /* Header */
 header {
-    background-color: #2e7d32;
+    background: #35424a;
     color: #fff;
-    padding: 1em 2em;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -29,11 +31,12 @@ header .logo {
 header nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 1em;
+    margin: 0 15px;
+    transition: color 0.3s ease;
 }
 
 header nav a:hover {
-    text-decoration: underline;
+    color: #ffcd00;
 }
 
 /* Banner Section */
@@ -101,7 +104,7 @@ section {
 
 /* Footer */
 footer {
-    background-color: #2e7d32;
+    background-color: #35424a;
     color: #fff;
     text-align: center;
     padding: 1em;
