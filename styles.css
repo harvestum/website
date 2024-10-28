@@ -1,40 +1,108 @@
-body {
-    background: linear-gradient(to bottom, #f0f8ff, #e0f7fa); /* Gradient background */
-    color: #003300; /* Dark green text */
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6; /* Improved readability */
+/* Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
 header {
-    background-color: #4caf50; /* Darker green for header */
-    padding: 20px;
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Banner Section */
+.banner {
+    background: url('images/banner_background.jpg') no-repeat center center/cover;
+    color: #fff;
     text-align: center;
-    color: white; /* White text for contrast */
+    padding: 100px 20px;
 }
 
-main {
-    padding: 20px;
-    text-align: center; /* Centered content */
+.banner-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
 }
 
-a {
-    color: #32cd32; /* Bright green for links */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold links for emphasis */
+.banner-content p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
 }
 
-a:hover {
-    text-decoration: underline; /* Underline on hover for better UX */
+.cta-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
-footer {
-    background-color: #4caf50; /* Footer matching the header */
-    color: white;
+.cta-button:hover {
+    background-color: #388e3c;
+}
+
+/* Content Sections */
+section {
+    padding: 3em 2em;
+}
+
+.about-content, .contact-content {
     text-align: center;
-    padding: 10px 0; /* Footer padding */
-    position: relative;
-    bottom: 0;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Contact Form */
+.contact-content form input, .contact-content form textarea {
     width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-content form button {
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-content form button:hover {
+    background-color: #388e3c;
+}
+
+/* Footer */
+footer {
+    background-color: #2e7d32;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
 }
