@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
     <header>
         <div class="logo">Harvestum Exports</div>
         <nav>
@@ -16,20 +15,18 @@
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-
-    <!-- Contact Us Form -->
     <section class="contact-content">
         <h2>Contact Us</h2>
         <p>Reach out to us with any inquiries or for more information about our products.</p>
-        <form action="https://example.com/contact" method="POST">
+        <p>Phone: 89256 27380</p>
+        <p>Email: info@theharvestum.com</p>
+        <form id="userForm" action="/submit" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <button type="submit">Submit</button>
         </form>
     </section>
-
-    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Harvestum Exports. All rights reserved.</p>
     </footer>
