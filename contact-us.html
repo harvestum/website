@@ -3,19 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Harvestum</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to shared CSS -->
+    <title>Contact Us - Harvestum Exports</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Contact Us</h1>
+        <div class="logo">Harvestum Exports</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
     </header>
-    <main>
-        <p>Phone: <a href="tel:8925627380">8925627380</a></p>
-        <p>Email: <a href="mailto:info@theharvestum.com">info@theharvestum.com</a></p>
-    </main>
+
+    <!-- Contact Us Form -->
+    <section class="contact-content">
+        <h2>Contact Us</h2>
+        <p>Reach out to us with any inquiries or for more information about our products.</p>
+        <form action="https://example.com/contact" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Harvestum. All rights reserved.</p>
+        <p>&copy; 2024 Harvestum Exports. All rights reserved.</p>
     </footer>
 </body>
 </html>
