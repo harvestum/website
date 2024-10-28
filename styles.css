@@ -8,13 +8,13 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
-    background-color: #1b1b1b;
+    background-color: #004d40; /* Greenish-blue background */
     line-height: 1.6;
 }
 
 /* Header */
 header {
-    background: #282828;
+    background: #00695c; /* Darker greenish-blue */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -34,12 +34,12 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #ffcd00;
+    color: #ffeb3b; /* Yellow accent */
 }
 
 header .cta-button {
-    background-color: #ffcd00;
-    color: #333;
+    background-color: #ffeb3b; /* Yellow button */
+    color: #004d40;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -48,7 +48,7 @@ header .cta-button {
 }
 
 header .cta-button:hover {
-    background-color: #ffb700;
+    background-color: #ffee58; /* Lighter yellow */
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -79,6 +79,17 @@ header .cta-button:hover {
     margin-bottom: 1em;
 }
 
+/* Paragraphs */
+.banner-content p,
+.about-content p,
+.contact-content p {
+    margin-bottom: 1em;
+    line-height: 1.8;
+    color: #e0f2f1;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
 .image-container {
     display: flex;
     justify-content: center;
@@ -104,8 +115,8 @@ header .cta-button:hover {
 }
 
 .email-signup .learn-more {
-    background-color: #ffcd00;
-    color: #333;
+    background-color: #ffeb3b;
+    color: #004d40;
     padding: 10px 20px;
     border: none;
     border-radius: 0 5px 5px 0;
@@ -113,7 +124,7 @@ header .cta-button:hover {
 }
 
 .email-signup .learn-more:hover {
-    background-color: #ffb700;
+    background-color: #ffee58;
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -124,8 +135,8 @@ section {
     max-width: 1000px;
     margin: auto;
     text-align: center;
-    background: #fff;
-    color: #333;
+    background: #004d40;
+    color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -133,12 +144,12 @@ section {
 
 section h2 {
     margin-bottom: 20px;
-    color: #35424a;
+    color: #ffeb3b;
     font-size: 2em;
 }
 
 footer {
-    background-color: #35424a;
+    background-color: #00695c;
     color: #fff;
     text-align: center;
     padding: 1em;
