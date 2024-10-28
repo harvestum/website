@@ -7,20 +7,18 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+    color: #fff;
+    background-color: #1b1b1b;
     line-height: 1.6;
-    background: #f4f4f4;
 }
 
 /* Header */
 header {
-    background: #35424a;
-    color: #fff;
+    background: #282828;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -39,6 +37,22 @@ header nav a:hover {
     color: #ffcd00;
 }
 
+header .cta-button {
+    background-color: #ffcd00;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+header .cta-button:hover {
+    background-color: #ffb700;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Banner Section */
 .banner {
     background: url('images/banner_background.jpg') no-repeat center center/cover;
@@ -50,7 +64,7 @@ header nav a:hover {
 .banner-content {
     max-width: 600px;
     margin: auto;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
 }
@@ -65,17 +79,43 @@ header nav a:hover {
     margin-bottom: 1em;
 }
 
-.cta-button {
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-container img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.email-signup {
+    margin-top: 20px;
+}
+
+.email-signup input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 200px;
+}
+
+.email-signup .learn-more {
     background-color: #ffcd00;
     color: #333;
     padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
 }
 
-.cta-button:hover {
+.email-signup .learn-more:hover {
     background-color: #ffb700;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Content Sections */
@@ -85,8 +125,10 @@ section {
     margin: auto;
     text-align: center;
     background: #fff;
+    color: #333;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 section h2 {
